@@ -11,6 +11,22 @@ const Home = () => {
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Your ultimate guide to staying safe online with clear, visual explainers for DNS, HTTPS, phishing, and security habits students can use.
           </p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-700 bg-slate-900/90 p-6">
+              <h2 className="text-2xl font-semibold text-cyan-400 mb-3">Mobile-Friendly Access</h2>
+              <p className="text-gray-300 leading-relaxed">
+                This site is built to fit smaller screens with easy-to-read cards and tap-friendly navigation.
+              </p>
+            </div>
+            <div className="rounded-3xl border border-slate-700 bg-slate-900/90 p-6">
+              <h2 className="text-2xl font-semibold text-white mb-3">Mobile Quick Actions</h2>
+              <ul className="text-gray-300 space-y-2">
+                <li>• Use the top menu for fast navigation.</li>
+                <li>• Tap the quiz for quick phishing practice on the go.</li>
+                <li>• Read each guide in a clean, mobile-friendly layout.</li>
+              </ul>
+            </div>
+          </div>
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             <article className="rounded-3xl border border-slate-700 bg-slate-900/90 p-6">
               <div className="accent-chip mb-4">DNS</div>
