@@ -27,10 +27,10 @@ const Dns = () => {
           </div>
         </div>
 
-        <div className="grid gap-8 xl:grid-cols-[1.6fr_1fr]">
-          <div className="space-y-4">
+        <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
+          <div className="space-y-4 max-w-full">
             {steps.map((step, index) => (
-              <div key={index} className="timeline-step">
+              <div key={index} className="timeline-step w-full">
                 <div className="flex items-center gap-3">
                   <span>{index + 1}</span>
                   <h2 className="text-lg font-semibold text-white">Step {index + 1}</h2>
@@ -39,12 +39,12 @@ const Dns = () => {
               </div>
             ))}
           </div>
-          <div className="card-strong p-8">
+          <div className="card-strong p-6 lg:p-8 w-full">
             <div className="accent-chip mb-5">Query Example</div>
             <p className="text-gray-300 mb-4 leading-relaxed">
               A simple DNS lookup command shows how the resolver translates a name into an IP address.
             </p>
-            <pre className="code-shell">dig example.com +short
+            <pre className="code-shell whitespace-pre-wrap break-words">dig example.com +short
 172.217.13.164</pre>
             <div className="mt-6 rounded-3xl border border-slate-700 bg-slate-900/90 p-5">
               <h3 className="text-xl font-semibold text-blue-400 mb-3">Safety note</h3>
