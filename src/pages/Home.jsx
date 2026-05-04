@@ -27,19 +27,19 @@ const Home = () => {
               </ul>
             </div>
           </div>
-          <div className="mt-10 sm:hidden rounded-3xl border border-slate-700 bg-slate-900/90 p-6">
+          <div className="mt-10 sm:hidden rounded-3xl border border-slate-700 bg-slate-900/90 p-6 max-w-full">
             <h2 className="text-2xl font-semibold text-purple-400 mb-3">Mobile Menu Guide</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
               On small screens, use the quick buttons below to jump straight to the most important sections.
             </p>
-            <div className="grid gap-3">
-              <Link to="/dns" className="rounded-3xl bg-slate-800 px-4 py-3 text-center text-white hover:bg-slate-700 transition">
+            <div className="grid gap-3 grid-cols-1">
+              <Link to="/dns" className="w-full rounded-3xl bg-slate-800 px-3 py-2 text-sm font-semibold text-center text-white hover:bg-slate-700 transition">
                 Go to DNS
               </Link>
-              <Link to="/https" className="rounded-3xl bg-slate-800 px-4 py-3 text-center text-white hover:bg-slate-700 transition">
+              <Link to="/https" className="w-full rounded-3xl bg-slate-800 px-3 py-2 text-sm font-semibold text-center text-white hover:bg-slate-700 transition">
                 Go to HTTPS
               </Link>
-              <Link to="/phishing-quiz" className="rounded-3xl bg-slate-800 px-4 py-3 text-center text-white hover:bg-slate-700 transition">
+              <Link to="/phishing-quiz" className="w-full rounded-3xl bg-slate-800 px-3 py-2 text-sm font-semibold text-center text-white hover:bg-slate-700 transition">
                 Take the Quiz
               </Link>
             </div>
